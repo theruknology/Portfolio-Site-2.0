@@ -1,0 +1,1 @@
+Hero Section Background: <a href="https://www.freepik.com/free-vector/gradient-blur-pink-blue-abstract-background_16359095.htm#query=grainy%20gradient&position=2&from_view=search&track=location_fest_v1">Image by rawpixel.com</a> on Freepik

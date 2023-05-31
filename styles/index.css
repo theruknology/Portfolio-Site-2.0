@@ -102,6 +102,7 @@ img {
 
 nav {
   position: fixed;
+  z-index: 100;
   top: 0;
   background-color: rgba(255, 255, 255, 0.993);
   border-radius: 1rem;
@@ -151,6 +152,7 @@ nav {
   font-size: 1.4rem;
   position: relative;
   margin-bottom: 15px;
+  text-transform: uppercase;
 }
 
 .subtitle-small h2::after {
@@ -159,6 +161,24 @@ nav {
   bottom: -5px;
   left: 0;
   width: 50px; /* Adjust the width as desired */
+  height: 10px;
+  background-color: #5d00a7;
+}
+
+.subtitle-large h2 {
+  font-size: 1.4rem;
+  position: relative;
+  margin-bottom: 15px;
+  color: #5d00a7;
+  text-transform: uppercase;
+}
+
+.subtitle-large h2::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 80px; /* Adjust the width as desired */
   height: 10px;
   background-color: #5d00a7;
 }

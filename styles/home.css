@@ -1,5 +1,9 @@
 header {
-  background: url("../media/hero-background.jpg");
+  background-image: linear-gradient(
+      rgba(212, 216, 253, 0) 80%,
+      rgb(212, 216, 253) 90%
+    ),
+    url("../media/hero-background.jpg");
   background-size: cover;
 }
 
@@ -74,16 +78,126 @@ header {
   width: 50%;
 }
 
+.projects-capsule {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #5d00a7;
+  border: 1px solid #5d00a7;
+  background-color: #5c00a709;
+  width: fit-content;
+  padding-block: 0.5rem;
+  padding-inline: 1rem;
+  border-radius: 10rem;
+}
+
 @media (max-width: 900px) {
   .hero-content img {
     display: none;
-  } 
+  }
   .hero-text {
-    align-items: center;
-    text-align: center;
-    gap: 2rem;
+    /* align-items: center;
+    text-align: center; */
+    gap: 1rem;
+  }
+
+  .hero-text h1 {
+    width: 90%;
   }
   .hero-text h3 {
     width: 70%;
   }
+}
+
+/*  */
+/* About Me CSS Starts Here */
+/*  */
+.about-me-bg {
+  /* background-color: rgb(212, 216, 253); */
+  background-image: linear-gradient(
+    rgba(212, 216, 253) 90%,
+    rgba(212, 216, 253, 0) 100%
+  );
+
+  padding-bottom: 5rem;
+}
+
+.about-me-section {
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+.about-me-portrait {
+  height: 400px;
+  width: 100%;
+  background-color: #ffffffb7;
+  border-radius: 1rem;
+}
+
+.about-me-content {
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.about-me-content-quote {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 124.5%;
+}
+
+.about-me-content-description {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 170.5%;
+}
+
+@media (min-width: 900px) {
+  .about-me-section {
+    flex-direction: row;
+  }
+
+  .about-me-portrait {
+    flex: 1;
+    min-width: 350px;
+  }
+}
+
+/*  */
+/* Small Quote Section Starts Here */
+/*  */
+.small-quote-section {
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.small-quote-section h2 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 132%;
+  /* or 46px */
+
+  letter-spacing: -0.045em;
+}
+
+.quote-highlight {
+  background-color: #5c00a731;
+  padding-inline: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.small-quote-section p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 132%;
+  /* or 33px */
+  letter-spacing: -0.045em;
 }

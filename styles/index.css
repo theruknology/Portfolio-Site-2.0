@@ -22,6 +22,10 @@ body {
   line-height: 1.6;
 }
 
+section {
+  padding-block: 1rem;
+}
+
 img {
   max-width: 100%;
   display: block;
@@ -38,7 +42,6 @@ img {
 
 .primary-navigation {
   flex-direction: column;
-  align-items: center;
 }
 
 /* Use Javascript and button to make display block */
@@ -48,7 +51,6 @@ img {
 
 .logo-mobile-ham-section {
   align-items: center;
-  width: 100%;
 }
 
 .logo-mobile-ham-section svg {
@@ -64,6 +66,9 @@ img {
 .nav-links {
   list-style: none;
   flex-direction: column;
+
+  gap: 0.5rem;
+  margin-block: 1rem;
 }
 
 .nav-links li {
@@ -75,33 +80,38 @@ img {
   text-decoration: none;
   font-size: 0.9rem;
   font-family: "Inter", sans-serif;
-  font-weight: 300;
+  font-weight: 500;
 }
 
 .active-link a {
-  font-weight: 500;
+  font-weight: 700;
   color: #5d00a7;
 }
 
 .call-to-action {
   background-color: #5d00a7;
   color: white !important;
-  padding-inline: 1rem;
+  padding-inline: 1.2rem;
   padding-block: 0.7rem;
   border-radius: 0.8rem;
 }
 
+.cta-li {
+  padding-block: 2rem;
+}
+
 nav {
   position: fixed;
-  top: 1rem;
-  background-color: rgba(255, 255, 255, 0.377);
-  border: 2px solid white;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.993);
   border-radius: 1rem;
   right: 50%;
   transform: translateX(50%);
 
+  width: 100%;
+
   padding-inline: 1rem;
-  padding-block: 0.5rem;
+  padding-block: 1.2rem;
 }
 
 .nav-links a:hover {
@@ -119,12 +129,36 @@ nav {
   .nav-links {
     flex-direction: row;
     gap: 1.2rem;
+
+    margin-block: 0rem;
   }
   .logo-mobile-ham-section svg {
     display: none;
   }
-
+  .cta-li {
+    padding-block: 0rem;
+  }
   .logo-mobile-ham-section {
     width: fit-content;
   }
+}
+
+.subtitle-small {
+  color: #5d00a7;
+}
+
+.subtitle-small h2 {
+  font-size: 1.4rem;
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.subtitle-small h2::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 50px; /* Adjust the width as desired */
+  height: 10px;
+  background-color: #5d00a7;
 }

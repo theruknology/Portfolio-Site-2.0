@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/home.css" />
     <link rel="stylesheet" href="styles/index.css" />
+    <script src="script.js" defer></script>
     <title>
       Bringing Impact From The Web - Mohammed Ruknuddin, Web Developer And
       Designer
@@ -203,19 +204,201 @@
         </div>
       </section>
 
-      <section>
+      <section class="why-me-bg">
         <!-- Why Choose Me Section -->
         <div class="why-me-section w-adjust">
           <!-- section content here -->
+          <h2>Why Choose Me? And How I Stand Out.</h2>
+          <ul class="why-points-list flex">
+            <li class="why-point flex">
+              <h4>1.</h4>
+              <div class="point-content">
+                <h3>Brand design</h3>
+                <p>
+                  By incorporating your brand colors, layout, and shapes, I can
+                  craft a website that serves as your own custom-tailored
+                  showroom, embodying the essence of your unique brand.
+                </p>
+              </div>
+            </li>
+            <li class="why-point flex">
+              <h4>2.</h4>
+              <div class="point-content">
+                <h3>Blazingly Fast!</h3>
+                <p>
+                  Your website will be powered by fuel-efficient tools and
+                  techniques, ensuring optimal loading speed. We guarantee that
+                  your site won't lose valuable customers due to sluggish
+                  performance.
+                </p>
+              </div>
+            </li>
+            <li class="why-point flex">
+              <h4>3.</h4>
+              <div class="point-content">
+                <h3>Support and Maintenance</h3>
+                <p>
+                  Even after the completion of your website, I provide ongoing
+                  support and maintenance services. I am here to assist you with
+                  any updates or modifications you may need in the future.
+                </p>
+              </div>
+            </li>
+          </ul>
         </div>
       </section>
 
       <section>
         <!-- Testimonials Section -->
-        <div class="testimonials-section w-adjust">
+        <div class="testimonials-section w-adjust flex">
           <!-- section content here -->
+          <div class="subtitle-small">
+            <h2>Testimonials</h2>
+          </div>
+
+          <div class="carousel-container">
+            <div class="testimonials-carousel flex">
+              <div class="testimonial-wrapper flex">
+                <img
+                  src="media/asfiya-testimonial.png"
+                  alt="Testimonial By Asfiya Tehmeen"
+                />
+              </div>
+
+              <div class="testimonial-wrapper flex">
+                <img
+                  src="media/asfiya-testimonial.png"
+                  alt="Testimonial By Asfiya Tehmeen"
+                />
+              </div>
+
+              <div class="testimonial-wrapper flex">
+                <img
+                  src="media/asfiya-testimonial.png"
+                  alt="Testimonial By Asfiya Tehmeen"
+                />
+              </div>
+            </div>
+
+            <button class="carousel-button prev-button">&lt;- Prev.</button>
+            <button class="carousel-button next-button">Next -&gt;</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="steps-section-bg">
+        <!-- 3 Steps Section -->
+        <div class="simple-steps-section w-adjust flex">
+          <!-- section content here -->
+
+          <h3>
+            Your Website is just <span class="bold-span"> 3 Steps</span> Away
+          </h3>
+          <div class="subtitle-small">
+            <h2>How it Works</h2>
+          </div>
+
+          <div class="steps-carousel">
+            <div class="steps-item flex step-one">
+              <h4>Discuss</h4>
+              <p>
+                We discuss your project with a quick online meeting (Zoom/Google
+                Meet) and organize your content and media.
+              </p>
+            </div>
+            <div class="steps-item flex step-two">
+              <h4>Design</h4>
+              <p>
+                I come up with a web design that best works for your request,
+                and we talk about changes and tweaks.
+              </p>
+            </div>
+            <div class="steps-item flex step-three">
+              <h4>Deliver</h4>
+              <p>
+                After finalizing the website and selecting a suitable hosting
+                plan, we can get your brand new website online ASAP!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <!-- Work Section -->
+        <div class="work-section flex w-adjust">
+          <!-- section content here -->
+
+          <h2>Watch My Work On YouTube</h2>
+          <a href="/">See Portfolio -&gt;</a>
+          <iframe
+            src="https://www.youtube.com/embed/gY0ZgfankSs?start=19"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+
+      <section class="contact-section-bg">
+        <!-- Contact Section -->
+        <div class="contact-section w-adjust">
+          <!-- section content here -->
+
+          <form class="contact-form" action="">
+            <h2>Contact</h2>
+
+            <h3>Let's discuss and get your business online in record time!</h3>
+
+            <div class="name-email-field flex">
+              <div class="input-field">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" required placeholder="John Doe" />
+              </div>
+              <div class="input-field">
+                <label for="email">Your Best Email</label>
+                <input
+                  required
+                  type="email"
+                  id="email"
+                  placeholder="john@doe.com"
+                />
+              </div>
+            </div>
+
+            <div class="input-field">
+              <label for="message">Your Message</label>
+              <textarea
+                required
+                name="message"
+                id="message"
+                cols="30"
+                rows="10"
+              ></textarea>
+            </div>
+
+            <p class="note">
+              Expect a reply in your email in about
+              <span class="bold-span"> 3 Hours</span>
+            </p>
+
+            <button type="submit">
+              <p>SEND MESSAGE</p>
+              <img src="media/send-icon.png" alt="Send Icon" />
+            </button>
+          </form>
         </div>
       </section>
     </main>
+
+    <footer>
+      <div class="footer-section w-adjust">
+        <h2>Mohammed Ruknuddin</h2>
+        <a href="mailto:iosrukn123@gmail.com">iosrukn123@gmail.com</a>
+      </div>
+
+      <ul class="footer-links"></ul>
+    </footer>
   </body>
 </html>

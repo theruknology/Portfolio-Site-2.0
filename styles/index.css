@@ -129,7 +129,7 @@ nav {
   }
   .nav-links {
     flex-direction: row;
-    gap: 1.2rem;
+    gap: 2rem;
 
     margin-block: 0rem;
   }
@@ -161,7 +161,7 @@ nav {
   bottom: -5px;
   left: 0;
   width: 50px; /* Adjust the width as desired */
-  height: 10px;
+  height: 7px;
   background-color: #5d00a7;
 }
 
@@ -171,6 +171,8 @@ nav {
   margin-bottom: 15px;
   color: #5d00a7;
   text-transform: uppercase;
+
+  line-height: 30px;
 }
 
 .subtitle-large h2::after {
@@ -179,6 +181,30 @@ nav {
   bottom: -8px;
   left: 0;
   width: 80px; /* Adjust the width as desired */
-  height: 10px;
+  height: 7px;
   background-color: #5d00a7;
+}
+
+.subtitle-large h2::before {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 90px;
+  width: 20px; /* Adjust the width as desired */
+  height: 7px;
+  background-color: #5d00a7;
+}
+
+footer {
+  min-height: 500px;
+  background-color: #1e1e1e;
+  padding-block: 2rem;
+}
+
+.footer-section {
+  color: rgb(206, 206, 206);
+}
+
+.footer-section a {
+  color: white;
 }

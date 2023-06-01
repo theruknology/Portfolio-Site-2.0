@@ -7,3 +7,7 @@ Website Icon <a href="https://www.flaticon.com/free-icons/front-end" title="fron
 Ecommerce Icon <a href="https://www.flaticon.com/free-icons/ecommerce" title="ecommerce icons">Ecommerce icons created by Freepik - Flaticon</a>
 
 Update Icon <a href="https://www.flaticon.com/free-icons/system-update" title="system update icons">System update icons created by Freepik - Flaticon</a>
+
+Steps Background <a href="https://www.freepik.com/free-vector/abstract-modern-gradient-background-with-grainy-texture-geometric-shapes_35446142.htm#query=grainy%20gradient&position=11&from_view=search&track=location_fest_v1">Image by stephanie2212</a> on Freepik
+
+Send-Icon <a href="https://www.flaticon.com/free-icons/send" title="send icons">Send icons created by Freepik - Flaticon</a>

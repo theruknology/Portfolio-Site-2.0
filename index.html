@@ -346,7 +346,13 @@
         <div class="contact-section w-adjust">
           <!-- section content here -->
 
-          <form class="contact-form" action="">
+          <form
+            class="contact-form"
+            onsubmit="setEmailSubject()"
+            action="mailto:iosrukn123@gmail.com"
+            method="POST"
+            enctype="text/plain"
+          >
             <h2>Contact</h2>
 
             <h3>Let's discuss and get your business online in record time!</h3>
@@ -371,7 +377,7 @@
               <label for="message">Your Message</label>
               <textarea
                 required
-                name="message"
+                name="Message "
                 id="message"
                 cols="30"
                 rows="10"
@@ -379,7 +385,8 @@
             </div>
 
             <p class="note">
-              Expect a reply in your email in about
+              You will be redirected to your gmail. Expect a reply in your email
+              in about
               <span class="bold-span"> 3 Hours</span>
             </p>
 
@@ -388,6 +395,20 @@
               <img src="media/send-icon.png" alt="Send Icon" />
             </button>
           </form>
+
+          <script>
+            function setEmailSubject() {
+              const subject =
+                "Project Inquiry - " + document.getElementById("name").value;
+              const form = document.querySelector("form");
+              form.setAttribute(
+                "action",
+                form.getAttribute("action") +
+                  "?subject=" +
+                  encodeURIComponent(subject)
+              );
+            }
+          </script>
         </div>
       </section>
     </main>

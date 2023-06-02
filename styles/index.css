@@ -40,6 +40,10 @@ img {
   display: flex;
 }
 
+.bold-span {
+  font-weight: 700;
+}
+
 .primary-navigation {
   flex-direction: column;
 }

@@ -11,3 +11,5 @@ Update Icon <a href="https://www.flaticon.com/free-icons/system-update" title="s
 Steps Background <a href="https://www.freepik.com/free-vector/abstract-modern-gradient-background-with-grainy-texture-geometric-shapes_35446142.htm#query=grainy%20gradient&position=11&from_view=search&track=location_fest_v1">Image by stephanie2212</a> on Freepik
 
 Send-Icon <a href="https://www.flaticon.com/free-icons/send" title="send icons">Send icons created by Freepik - Flaticon</a>
+
+Portfolio Background Image by <a href="https://www.freepik.com/free-vector/gradient-grainy-gradient-background_34595811.htm#query=dark%20grainy%20gradient%20background&position=11&from_view=search&track=ais">Freepik</a>

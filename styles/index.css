@@ -36,6 +36,31 @@ img {
   margin-inline: auto;
 }
 
+.title-bg {
+  padding-top: 7rem;
+  padding-bottom: 3rem;
+
+  /* min-height: 200px; */
+  background-size: cover;
+
+  background-image: linear-gradient(
+      rgb(255, 255, 255) 0%,
+      rgba(255, 255, 255, 0) 10%,
+      rgba(255, 255, 255, 0) 90%,
+      rgb(255, 255, 255) 100%
+    ),
+    url("../media/steps-background.jpg");
+}
+
+.title h1 {
+  line-height: 2.8rem;
+}
+
+.title p {
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
 .flex {
   display: flex;
 }
@@ -102,6 +127,11 @@ img {
 
 .cta-li {
   padding-block: 2rem;
+  transition:all 0.3s ease-in-out;
+}
+
+.cta-li:hover {
+  transform: translatey(-15%);
 }
 
 nav {

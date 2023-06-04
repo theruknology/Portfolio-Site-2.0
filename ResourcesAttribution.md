@@ -13,3 +13,13 @@ Steps Background <a href="https://www.freepik.com/free-vector/abstract-modern-gr
 Send-Icon <a href="https://www.flaticon.com/free-icons/send" title="send icons">Send icons created by Freepik - Flaticon</a>
 
 Portfolio Background Image by <a href="https://www.freepik.com/free-vector/gradient-grainy-gradient-background_34595811.htm#query=dark%20grainy%20gradient%20background&position=11&from_view=search&track=ais">Freepik</a>
+
+Shine Icon <a href="https://www.flaticon.com/free-icons/shine" title="shine icons">Shine icons created by Freepik - Flaticon</a>
+
+Marketing Icon <a href="https://www.flaticon.com/free-icons/product" title="product icons">Product icons created by Flowicon - Flaticon</a>
+
+Rocket Icon <a href="https://www.flaticon.com/free-icons/deploy" title="deploy icons">Deploy icons created by Yogi Aprelliyanto - Flaticon</a>
+
+Badge Icon <a href="https://www.flaticon.com/free-icons/branding" title="branding icons">Branding icons created by Yogi Aprelliyanto - Flaticon</a>
+
+Purple Shining <a href="https://www.flaticon.com/free-icons/shine" title="shine icons">Shine icons created by Freepik - Flaticon</a>

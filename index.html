@@ -131,7 +131,7 @@
           </nav>
         </div>
       </div>
-      <a href="/" class="mobile-cta">Get Started</a>
+      <a href="#contact-form-title" class="mobile-cta">Get Started</a>
 
       <!-- Hero Section -->
       <div class="hero-section">
@@ -418,13 +418,13 @@
           <!-- section content here -->
 
           <form
+            id="contact-form"
             class="contact-form"
-            onsubmit="setEmailSubject()"
             action="mailto:iosrukn123@gmail.com"
             method="POST"
             enctype="text/plain"
           >
-            <h2>Contact</h2>
+            <h2 id="contact-form-title">Contact</h2>
 
             <h3>Let's discuss and get your business online in record time!</h3>
 
@@ -466,20 +466,6 @@
               <img src="media/send-icon.png" alt="Send Icon" />
             </button>
           </form>
-
-          <script>
-            function setEmailSubject() {
-              const subject =
-                "Project Inquiry - " + document.getElementById("name").value;
-              const form = document.querySelector("form");
-              form.setAttribute(
-                "action",
-                form.getAttribute("action") +
-                  "?subject=" +
-                  encodeURIComponent(subject)
-              );
-            }
-          </script>
         </div>
       </section>
     </main>

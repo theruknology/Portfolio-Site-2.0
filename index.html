@@ -38,11 +38,12 @@
   </head>
   <body>
     <header>
-      <nav>
+      <!-- <nav>
         <div class="primary-navigation flex w-adjust">
           <div class="logo-mobile-ham-section flex">
             <a class="logo">Mohammed R.</a>
             <svg
+              id="toggleButton"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
               fill="black"
@@ -52,7 +53,6 @@
               <path d="M0 0h24v24H0z" fill="none" />
               <path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z" />
             </svg>
-            <div class="button"></div>
           </div>
           <ul class="nav-links flex">
             <li class="active-link">
@@ -84,7 +84,54 @@
             </li>
           </ul>
         </div>
-      </nav>
+      </nav> -->
+
+      <div class="navbar">
+        <div class="primary-header flex w-adjust">
+          <div class="logo">Mohammed Ruknuddin</div>
+          <button
+            aria-controls="primary-navigation"
+            aria-expanded="false"
+            class="mobile-nav-toggle"
+          ></button>
+          <nav>
+            <ul
+              data-visible="false"
+              id="primary-navigation"
+              class="primary-navigation flex"
+            >
+              <li class="active-link">
+                <a href="/">Home</a>
+              </li>
+
+              <li>
+                <a href="/about/">About</a>
+              </li>
+
+              <li>
+                <a href="/my-services/">Services</a>
+              </li>
+
+              <li>
+                <a href="/portfolio/">Portfolio</a>
+              </li>
+
+              <li>
+                <a href="/blog/">Blog</a>
+              </li>
+
+              <li>
+                <a href="/contact/">Contact</a>
+              </li>
+
+              <li class="cta-li">
+                <a class="call-to-action" href="/">Get Started</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <a href="/" class="mobile-cta">Get Started</a>
 
       <!-- Hero Section -->
       <div class="hero-section">
@@ -287,6 +334,28 @@
           </div>
         </div>
       </section>
+
+      <script defer>
+        const carousel = document.querySelector(".testimonials-carousel");
+        const prevButton = document.querySelector(".prev-button");
+        const nextButton = document.querySelector(".next-button");
+
+        let slideIndex = 0;
+
+        prevButton.addEventListener("click", () => {
+          slideIndex = Math.max(slideIndex - 1, 0);
+          updateSlidePosition();
+        });
+
+        nextButton.addEventListener("click", () => {
+          slideIndex = Math.min(slideIndex + 1, carousel.children.length - 1);
+          updateSlidePosition();
+        });
+
+        function updateSlidePosition() {
+          carousel.style.transform = `translateX(-${slideIndex * 100}%)`;
+        }
+      </script>
 
       <section class="steps-section-bg">
         <!-- 3 Steps Section -->

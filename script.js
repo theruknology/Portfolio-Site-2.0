@@ -1,19 +1,15 @@
-const carousel = document.querySelector(".testimonials-carousel");
-const prevButton = document.querySelector(".prev-button");
-const nextButton = document.querySelector(".next-button");
+// JavaScript code to make the navbar responsive and full-screen
+const primaryNav = document.querySelector(".primary-navigation");
+const navToggle = document.querySelector(".mobile-nav-toggle");
 
-let slideIndex = 0;
+navToggle.addEventListener("click", () => {
+  const visibility = primaryNav.getAttribute("data-visible");
 
-prevButton.addEventListener("click", () => {
-  slideIndex = Math.max(slideIndex - 1, 0);
-  updateSlidePosition();
+  if (visibility === "false") {
+    primaryNav.setAttribute("data-visible", "true");
+    navToggle.setAttribute("aria-expanded", "true");
+  } else if (visibility === "true") {
+    primaryNav.setAttribute("data-visible", "false");
+    navToggle.setAttribute("aria-expanded", "false");
+  }
 });
-
-nextButton.addEventListener("click", () => {
-  slideIndex = Math.min(slideIndex + 1, carousel.children.length - 1);
-  updateSlidePosition();
-});
-
-function updateSlidePosition() {
-  carousel.style.transform = `translateX(-${slideIndex * 100}%)`;
-}

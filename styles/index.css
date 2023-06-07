@@ -361,9 +361,19 @@ nav {
 }
 
 footer {
-  min-height: 500px;
+  min-height: 400px;
   background-color: #1e1e1e;
   padding-block: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer-section {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
 }
 
 .footer-section {
@@ -372,4 +382,164 @@ footer {
 
 .footer-section a {
   color: white;
+}
+
+.footer-links {
+  margin-top: 1rem;
+  font-family: "Inter", sans-serif;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  list-style: none;
+}
+
+.footer-links li a:hover {
+  color: #d6a3ff;
+}
+
+.footer-section h3 {
+  margin-top: 2rem;
+}
+
+@media (min-width: 900px) {
+  .footer-section {
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+  }
+
+  .footer-section h3 {
+    margin-top: 0;
+  }
+}
+/*  */
+/* Contact Section Begins Here */
+/*  */
+.contact-section-bg {
+  background: linear-gradient(90deg, #000000bd 0%, #000000bd 100%),
+    url("../media/telephone-background.jpg");
+}
+
+.contact-section {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  padding-block: 2rem;
+  color: white;
+}
+
+.contact-section h2 {
+  color: #d6a3ff;
+  position: relative;
+
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.contact-section h2::after {
+  content: "";
+  z-index: 10;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 50px; /* Adjust the width as desired */
+  height: 7px;
+  background-color: #d6a3ff;
+}
+
+.contact-section h3 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 124.5%;
+  /* or 44px */
+
+  margin-block: 1rem;
+}
+
+.input-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.input-field input,
+textarea {
+  padding: 0.5rem;
+  padding-inline: 1rem;
+  border-radius: 0.4rem;
+  border: none;
+
+  font-family: "Inter", sans-serif;
+}
+
+.input-field input:focus,
+textarea:focus {
+  outline: 0.2rem solid #d6a3ff;
+}
+
+.input-field label {
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #dfdfdf;
+}
+
+textarea {
+  width: 100%-4rem;
+  resize: vertical;
+}
+
+.name-email-field {
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form button {
+  padding-block: 0.5rem;
+  padding-inline: 1.5rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  width: fit-content;
+  cursor: pointer;
+
+  margin-top: 1rem;
+
+  background-color: #d6a3ff;
+  border: none;
+  border-radius: 0.8rem;
+
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+button img {
+  height: 1.5rem;
+  display: inline;
+}
+
+.note {
+  margin-top: 1rem;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+@media (min-width: 900px) {
+  .contact-section {
+    grid-template-columns: 2fr 1fr;
+  }
+}
+
+@media (max-width: 500px) {
+  .name-email-field {
+    flex-direction: column;
+  }
 }

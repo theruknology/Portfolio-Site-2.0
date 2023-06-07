@@ -77,13 +77,13 @@
               </li>
 
               <li class="cta-li">
-                <a class="call-to-action" href="/">Get Started</a>
+                <a class="call-to-action" href="/contact/">Get Started</a>
               </li>
             </ul>
           </nav>
         </div>
       </div>
-      <a href="#contact-form-title" class="mobile-cta">Get Started</a>
+      <a href="/contact/" class="mobile-cta">Get Started</a>
 
       <!-- Hero Section -->
       <div class="hero-section">
@@ -103,9 +103,17 @@
               By using fuel-efficient tools, let's get your business online in
               record time!
             </h3>
-            <div class="input-cta">
+            <!-- <div class="input-cta">
               <input type="email" required placeholder="Type your email" />
               <button>Get A Website</button>
+            </div> -->
+            <div class="hero-cta flex">
+              <a href="/contact/" class="get-started">Get Started</a>
+              <a
+                href="https://calendly.com/ruknuddin/quick-meet"
+                class="book-call"
+                >Book Free Call</a
+              >
             </div>
           </div>
           <img src="media/hero-image.png" alt="Web Design Examples" />
@@ -383,13 +391,20 @@
             <div class="name-email-field flex">
               <div class="input-field">
                 <label for="name">Full Name</label>
-                <input type="text" id="name" required placeholder="John Doe" />
+                <input
+                  type="text"
+                  id="name"
+                  name="Full Name"
+                  required
+                  placeholder="John Doe"
+                />
               </div>
               <div class="input-field">
                 <label for="email">Your Best Email</label>
                 <input
                   required
                   type="email"
+                  name="email"
                   id="email"
                   placeholder="john@doe.com"
                 />
@@ -404,12 +419,11 @@
                 id="message"
                 cols="30"
                 rows="10"
+                placeholder="Please include as much detail of the project as possilbe."
               ></textarea>
             </div>
-
             <p class="note">
-              You will be redirected to your gmail. Expect a reply in your email
-              in about
+              Expect a reply in your email in about
               <span class="bold-span"> 3 Hours</span>
             </p>
 
@@ -424,11 +438,42 @@
 
     <footer>
       <div class="footer-section w-adjust">
-        <h2>Mohammed Ruknuddin</h2>
-        <a href="mailto:iosrukn123@gmail.com">iosrukn123@gmail.com</a>
-      </div>
+        <div class="f1">
+          <h2>Mohammed Ruknuddin</h2>
+          <a href="mailto:iosrukn123@gmail.com">iosrukn123@gmail.com</a>
+          <p>Phone: +966 54 651 0741</p>
+          <p>&copy; Mohammed Ruknuddin, All Rights Reserved</p>
+        </div>
 
-      <ul class="footer-links"></ul>
+        <div class="f2">
+          <h3>Common Links</h3>
+          <ul class="footer-links flex">
+            <li>
+              <a href="/">Home</a>
+            </li>
+
+            <li>
+              <a href="/about/">About</a>
+            </li>
+
+            <li>
+              <a href="/my-services/">Services</a>
+            </li>
+
+            <li>
+              <a href="/portfolio/">Portfolio</a>
+            </li>
+
+            <li>
+              <a href="/blog/">Blog</a>
+            </li>
+
+            <li>
+              <a href="/contact/">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </footer>
   </body>
 </html>

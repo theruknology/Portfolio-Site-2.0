@@ -83,7 +83,7 @@
       <!-- Title Section -->
       <div class="title-bg">
         <div class="title w-adjust">
-          <h1>SERVICES</h1>
+          <h1>Services</h1>
           <h2>Let's get you a website, that your customers will love!</h2>
           <p>
             Take a moment to explore the range of options and competitive
@@ -244,12 +244,13 @@
           <!-- section content here -->
 
           <form
+            id="contact-form"
             class="contact-form"
             action="mailto:iosrukn123@gmail.com"
             method="POST"
             enctype="text/plain"
           >
-            <h2>Contact</h2>
+            <h2 id="contact-form-title">Contact</h2>
 
             <h3>Let's discuss and get your business online in record time!</h3>
 
@@ -258,8 +259,8 @@
                 <label for="name">Full Name</label>
                 <input
                   type="text"
-                  name="Full-Name"
                   id="name"
+                  name="Full Name"
                   required
                   placeholder="John Doe"
                 />
@@ -280,16 +281,15 @@
               <label for="message">Your Message</label>
               <textarea
                 required
-                name="Message"
+                name="Message "
                 id="message"
                 cols="30"
                 rows="10"
+                placeholder="Please include as much detail of the project as possilbe."
               ></textarea>
             </div>
-
             <p class="note">
-              You will be redirected to your gmail. Expect a reply in your email
-              in about
+              Expect a reply in your email in about
               <span class="bold-span"> 3 Hours</span>
             </p>
 
@@ -301,5 +301,45 @@
         </div>
       </section>
     </main>
+
+    <footer>
+      <div class="footer-section w-adjust">
+        <div class="f1">
+          <h2>Mohammed Ruknuddin</h2>
+          <a href="mailto:iosrukn123@gmail.com">iosrukn123@gmail.com</a>
+          <p>Phone: +966 54 651 0741</p>
+          <p>&copy; Mohammed Ruknuddin, All Rights Reserved</p>
+        </div>
+
+        <div class="f2">
+          <h3>Common Links</h3>
+          <ul class="footer-links flex">
+            <li>
+              <a href="/">Home</a>
+            </li>
+
+            <li>
+              <a href="/about/">About</a>
+            </li>
+
+            <li>
+              <a href="/my-services/">Services</a>
+            </li>
+
+            <li>
+              <a href="/portfolio/">Portfolio</a>
+            </li>
+
+            <li>
+              <a href="/blog/">Blog</a>
+            </li>
+
+            <li>
+              <a href="/contact/">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

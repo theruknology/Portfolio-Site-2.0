@@ -76,7 +76,7 @@
 }
 
 .service-description li {
-  margin-block: 1rem;
+  margin-block: 0.5rem;
 }
 
 .service-item a {
@@ -91,7 +91,7 @@
   font-size: 0.8rem;
   font-weight: 500;
 
-  margin-top: auto;
+  /* margin-top: auto; */
 
   transition: all 100ms ease-in-out;
 }
@@ -100,6 +100,12 @@
   background-color: white;
   color: #5d00a7;
   border: 1px solid #5d00a7;
+}
+
+p.price {
+  font-family: "Inter", sans-serif;
+  margin-top: auto;
+  font-weight: 900;
 }
 
 @media (min-width: 900px) {
